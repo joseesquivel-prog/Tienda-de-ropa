@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #444;
+    overflow: hidden;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 1em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+#ofertas, .productos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.producto {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    width: 23%;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+}
+
+.producto p {
+    margin: 10px 0;
+}
+
+.producto button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.producto button:hover {
+    background-color: #555;
+}
+
+#carrito {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 300px;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+}
+
+#carrito h2 {
+    margin: 0 0 10px;
+}
+
+#carrito ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#carrito ul li {
+    margin: 5px 0;
+}
+
+#carrito ul li span {
+    display: inline-block;
+    width: 200px;
+}
+
+#carrito .total {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#carrito .vaciar-carrito {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+#carrito .vaciar-carrito:hover {
+    background-color: #555;
+}

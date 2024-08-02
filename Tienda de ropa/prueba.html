@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagen Hover Example</title>
+    <style>
+        /* Estilo CSS para la imagen */
+        .image-container img {
+            width: 300px; /* Ajusta el tamaño de la imagen según tus necesidades */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img id="mainImage" src="images/prueba1.jpg" alt="Imagen inicial">
+    </div>
+
+    <script>
+        // Selecciona la imagen
+        const image = document.getElementById('mainImage');
+
+        // Guarda las rutas de las imágenes
+        const initialImageSrc = 'images/prueba1.jpg';
+        const hoverImageSrc = 'images/prueba2.jpg';
+
+        // Agrega los event listeners para cambiar la imagen al pasar el mouse
+        image.addEventListener('mouseenter', () => {
+            image.src = hoverImageSrc;
+        });
+
+        image.addEventListener('mouseleave', () => {
+            image.src = initialImageSrc;
+        });
+    </script>
+</body>
+</html>
